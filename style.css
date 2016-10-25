@@ -39,7 +39,7 @@ div {
 	width: 0;
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
-	border-bottom: #3498db solid 100px;
+	border-bottom: solid 100px #3498db ;
 }
 
 #triangle-down {
@@ -47,14 +47,14 @@ div {
 	width: 0;
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
-	border-top: #2980b9 solid 100px;
+	border-top: 100px solid  #2980b9 ;
 }
 
 #triangle-left {
 	height: 0;
 	width: 0;
 	border-top: 50px solid transparent;
-	border-right: #0dccc0 solid 100px;
+	border-right: 100px solid  #0dccc0 ;
 	border-bottom: 50px solid transparent;
 }
 
@@ -62,6 +62,77 @@ div {
 	height: 0;
 	width: 0;
 	border-top: 50px solid transparent;
-	border-left: #0ead9a solid 100px;
+	border-left: 100px solid  #0ead9a ;
 	border-bottom: 50px solid transparent;
 }
+
+#triangle-topleft {
+	height: 0;
+	width: 0;
+	border-top: 100px solid #74525f;
+	border-right: 100px solid transparent; 
+}
+
+#triangle-topright {
+	height: 0;
+	width: 0;
+	border-top: 100px solid #832d51;
+	border-left: 100px solid transparent; 
+}
+
+#triangle-bottomleft {
+	height: 0;
+	width: 0;
+	border-bottom: 100px solid #b23f73;
+	border-right: 100px solid transparent; 
+}
+
+#triangle-bottomright {
+	height: 0;
+	width: 0;
+	border-bottom: 100px solid #d49e99;
+	border-left: 100px solid transparent; 
+}
+
+#trapezoid-right {
+	height: 0;
+	width: 100px;
+	border-bottom: 100px solid #fe7c60;
+	border-right: 50px solid transparent;
+}
+#trapezoid-isosceles {
+	height: 0;
+	width: 100px;
+	border-bottom: 100px solid #e84b3a;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+}
+#parallelogram {
+	height: 100px;
+	width: 150px;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background: #c0392b;
+}
+
+
+#pentagon {
+    position: relative;
+    width: 67px;
+    border-width: 63px 16.5px 0;
+    border-style: solid;
+    border-color: #404148 transparent;
+}
+#pentagon::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -100px;
+    left: -16.5px;
+    border-width: 0 50px 37px;
+    border-style: solid;
+    border-color: transparent transparent #404148;
+}
+
